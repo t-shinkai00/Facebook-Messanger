@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
-  console.log(input);
+
   const sendMessage = (e) => {
     //all the logic to send a message
     setMessages([...messages, input]);
