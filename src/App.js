@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
   const [input, setInput] = useState("");
@@ -9,7 +9,7 @@ function App() {
       {/* input feild */}
       {/* button */}
       {/* messages themselves */}
-      <input onChange={e=>setInput(e.target.value)}/>
+      <input onChange={(e) => setInput(e.target.value)} />
       <p>{input}</p>
       <button>Send</button>
     </div>
