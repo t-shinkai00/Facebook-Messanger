@@ -19,7 +19,13 @@ function App() {
 
       <form>
         <input onChange={(e) => setInput(e.target.value)} value={input} />
-        <Button type="submit" onClick={sendMessage}>
+        <Button
+          disabled={!input}
+          variant="contained"
+          color="primary"
+          type="submit"
+          onClick={sendMessage}
+        >
           Send
         </Button>
       </form>
